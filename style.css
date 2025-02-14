@@ -1,0 +1,87 @@
+/* Fuente moderna desde Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #ff96c8);
+    color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título con efecto de degradado */
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #fff1eb, #ff9a9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Texto de la historia con efecto degradado */
+#texto {
+    font-size: 1.5em;
+    margin: 10px 20px;
+    transition: opacity 0.5s ease-in-out;
+    background: linear-gradient(135deg, #fff1eb, #ff9a9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto-fade {
+    opacity: 0;
+}
+
+/* Imagen con efecto de transición */
+img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 0, 102, 0.4);
+}
+
+img.fade {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+/* Botones románticos con animación */
+button {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(255, 0, 102, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff96c8, #ff758c);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(255, 0, 102, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Contenedor de botones */
+.botones {
+    margin-top: 20px;
+}
+
+.botones button {
+    margin: 5px;
+    padding: 15px;
+    font-size: 1.5em;
+}
